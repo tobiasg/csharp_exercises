@@ -12,7 +12,7 @@ namespace LengthOfLastWord {
         }
 
         public static int LengthOfLastWord(string s) {
-            string[] words = s.Trim().Split(' ');
+            string[] words = s.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries);
             return words.Last().Length;
         }
     }
